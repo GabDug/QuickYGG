@@ -7,7 +7,8 @@
     {
       "matches": ["https://*.yggtorrent.ws/*"],
       "js": ["quickygg.js"],
-      "css": ["fix.css"]
+      "css": ["fix.css"],
+      "run_at": "document_idle"
     }
   ],
   "browser_action": {
