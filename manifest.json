@@ -3,16 +3,29 @@
   "version": "0.0.0.1",
   "manifest_version": 2,
   "description": "Add a download button on the search page.",
+  "permissions": ["declarativeContent"],
+  "background": {
+    "scripts": ["core/background/background.js"],
+    "persistent": false
+  },
   "content_scripts": [
     {
       "matches": ["https://*.yggtorrent.ws/*"],
-      "js": ["quickygg.js"],
-      "css": ["fix.css"],
+      "js": ["core/content/quickygg.js"],
+      "css": ["core/content/fix.css"],
       "run_at": "document_idle"
     }
   ],
-  "browser_action": {
-    "default_popup": "popup.html",
-    "default_title": "Quick YGG"
-  }
+  "icons": {
+    "600": "icons/quick-ygg-color.png"
+  },
+  "page_action": {
+    "default_popup": "ui/popup/popup.html",
+    "default_title": "Quick YGG",
+    "default_icon": {
+      "600": "icons/quick-ygg-color.png"
+    }
+  },
+  "options_page": "ui/options/options.html"
+  
 }
