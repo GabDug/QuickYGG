@@ -1,0 +1,10 @@
+{
+  "quickYGGEnabledTitle": {
+    "description": "Popup Title",
+    "message": "Quick YGG est activé !"
+  },
+  "quickYGGEnabledText": {
+    "description": "Popup Text",
+    "message": "Les boutons de téléchargement devraient être là. Bonne navigation !"
+  }
+}

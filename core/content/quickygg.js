@@ -7,16 +7,6 @@ const newColumnIndex = 2; // 1 will be the second column, between "type" and "na
 // We wait for complete state before adding DL icon (so we don't break YGG by adding a new column)
 window.addEventListener("load", myMain, false);
 
-// $("DataTables_Table_0")
-//     .on('init.dt', function () {
-//         console.log('Table initialisation complete: ' + new Date().getTime());
-//     })
-//     .dataTable();
-
-// $(document).ready(function () {
-//     alert("test");
-// });
-
 function myMain(evt) {
 
     const tables = document.querySelectorAll('table.table');

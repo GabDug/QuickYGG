@@ -2,7 +2,7 @@
   "name": "Quick YGG",
   "version": "0.0.0.1",
   "manifest_version": 2,
-  "description": "Add a download button on the search page.",
+  "description": "Download files directly from the search results on YGG Torrent and save clicks!",
   "permissions": ["declarativeContent"],
   "background": {
     "scripts": ["core/background/background.js"],
@@ -26,6 +26,5 @@
       "600": "icons/quick-ygg-color.png"
     }
   },
-  "options_page": "ui/options/options.html"
-  
+  "default_locale": "fr"
 }
